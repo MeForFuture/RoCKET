@@ -1,0 +1,24 @@
+
+.text-decoration-none{
+    text-decoration: none;
+}
+.main-card > .card > input{   
+    max-width: 120px;
+    border-radius: 70px;
+    border: 1px solid #3ea2fb;
+    padding: 7px 20px;
+    margin-bottom: 10px;
+}
+textarea.c-text-area {
+    min-height: 200px;
+    border: none;
+    background: #F2F9FF;
+}
+
+.iframe-card > .card > input{   
+    max-width: 1920px;
+    border-radius: 70px;
+    border: 1px solid #3ea2fb;
+    padding: 7px 20px;
+    margin-bottom: 10px;
+}

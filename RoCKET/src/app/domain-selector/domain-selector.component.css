@@ -1,0 +1,19 @@
+.main-card > a{
+    width: fit-content;
+}
+.card.main-card a{
+    margin: 5px;
+    padding: 4px 23px;
+    background: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+    transition:0.2s all;
+}
+.card.main-card a:hover{
+	background: #007bff;
+	color: #fff;
+}
+.dark-col
+	{
+		color:rgba(0, 0, 0, 0.52);
+	}

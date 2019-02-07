@@ -1,0 +1,12 @@
+.sidebar-container{
+    background: #3EA2FB;
+    height: 100%;
+}
+.sidebar-container > ul{
+    list-style: none;
+    color: #fff;
+    padding-top: 30px;
+}
+.sidebar-container > ul> li{
+    padding: 8px 0;
+}

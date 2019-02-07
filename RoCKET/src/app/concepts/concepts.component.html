@@ -1,0 +1,86 @@
+<div class="page-container">
+    <div class="card main-card">
+        <a routerLink="/domain-selector" class="back-arrow"
+           style="margin-top: 15px"><i class="fa fa-arrow-left"></i></a>
+        <p class="dark-col form-control-lg">Concepts <input [(ngModel)]="searchKeyword"name="search_concept_name"
+                                                            type="search" class="{{searchByConceptName}}" id="search_concept_name" (keydown)="onKeydown($event)"
+                                            aria-describedby="emailHelp" placeholder="Search by Concept Name"><i
+                class="fa fa-search"></i></p>
+        <form class="consept-form">
+            <div class="row consepts-page">
+                <div class="col-sm-3">
+                    <div class="panel-outer consept-left">
+                        <div class="panel panel-default {{conceptBody}}" *ngFor="let concept of resultConcepts"
+                             (click)="showConcept(concept)">
+                             <div class="panel-body">
+                                <h3>{{ concept.name}}</h3>
+                                <p>{{concept.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 ">
+                    <div class="field-block">
+                        <div class="form-group">
+                            <input [(ngModel)]="conceptName" name="concept_name" type="text" class="{{conceptNameError}}" id="concept_name" aria-describedby="emailHelp" placeholder="Concept Name">
+                        </div>
+                        <div class="form-group">
+                            <textarea [(ngModel)]="conceptDescription" name="concept_description" class="{{conceptDescriptionError}}" rows="3" id="concept_description" placeholder="Concept Description Text"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                <input [(ngModel)]="conceptKeyword" name="add_keywords"
+                                          class="form-control"
+                                          rows="3" id="add_keywords" placeholder="Add Keywords" (keydown)="addKeyword($event)">
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="field-block second-tag">
+                                        <a (click)="addKeywordBtn()" ng href="javascript:void(0)" class="plus-icon"><i
+                                                class="fa fa-plus" style="font-size:20px"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="form-group">-->
+                            <!--<textarea [(ngModel)]="conceptShownwords" name="concept_shownwords"-->
+                                      <!--class="form-control"-->
+                                      <!--rows="3" id="concept_shownwords" placeholder="Concept shownwords"></textarea>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="tags-block">
+                        <ul class="tags" >
+                            <li *ngFor="let keyword of keywordlist"><a href="#" class="tag" >
+                                {{keyword.trim()}}</a></li>
+                        </ul>
+                    </div>  
+                </div>
+                <div class="col-sm-5 ">
+                    <div class="field-block second-tag">
+                        <a (click)="addConcept()" ng href="javascript:void(0)" class="plus-icon"><i class="fa fa-plus" style="font-size:20px"></i></a>
+                        <a (click)="updateConcept()" ng href="javascript:void(0)" class="plus-icon"><i
+                                class="f fa fa-upload" style="font-size:20px"></i></a>
+                        <a (click)="deleteConcept()" ng href="javascript:void(0)" class="plus-icon"><i
+                                class="fa fa-remove" style="font-size:20px"></i></a>
+                        <mat-slide-toggle [ngModelOptions]="{standalone: true}" style="float: right;margin-top: 10px;"
+                                [(ngModel)]="checked"
+                                class="example-margin"
+                                [color]="color"
+                                (change)="shownWords()">
+                            Shown words
+                        </mat-slide-toggle>
+                    </div>
+                    <div class="tags-block second-blocks">
+                        <ul class="tags">
+                            <li *ngFor="let keyword of filterShownWords">
+                                <a ng href="javascript:void(0)" class="tag" (click)="moveKeywords(keyword)" >{{keyword}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <a routerLink="/highlights" class="pull-right btn btn-primary highlights-btn"><i class="fa fa-arrow-right"></i></a>
+    <div class="clearfix"></div>
+</div>

@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+/*!
+* MyDirectory Classifieds Ads Theme
+* You must have a license to use this product.
+* You can purchase a license on Themeforest to legally use this product.
+* Author:Cedric Caudal @KaraTheme
+* Portfolio:themeforest.net/user/KaraTheme
+* Website:karatheme.com
+* Twitter:twitter.com/KaraTheme
+* Facebook:facebook.com/KaraTheme
+*/
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@font-face {
+    font-family:"FontAwesome";
+    src:url('/assets/font-awesome-4.5.0/fonts/fontawesome-webfont.eot');
+    src:url('/assets/font-awesome-4.5.0/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),url('assets/font-awesome-4.5.0/fonts/fontawesome-webfont.woff') format('woff'),url('/assets/font-awesome-4.5.0/fonts/fontawesome-webfont.ttf') format('truetype'),url('/assets/font-awesome-4.5.0/fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+    font-weight:normal;
+    font-style: normal;
+}
+.page-container{
+    background: #E5F4FF;
+    padding: 1px;
+}
+.main-card{
+    margin: 10px;
+    background: #F2F9FF !important;
+    padding: 5px;
+}
+.main-card > .card{   
+    max-width: 300px;
+    padding: 10px;
+}
+.back-arrow{
+    position: absolute;
+    right: 10px;
+}

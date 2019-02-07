@@ -1,0 +1,9 @@
+.main-header{
+    background: #3EA2FB;
+}
+.header-inner{
+    padding: 20px 0 10px 0;
+}
+.nav-item > a{
+    color: #fff !important;
+}

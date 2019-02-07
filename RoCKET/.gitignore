@@ -1,0 +1,15 @@
+/dist
+package-lock.json
+/node_modules
+/src/services/features
+
+/src/services/search/movies/aclImdb
+/src/services/search/movies/indexdir
+.DS_Store
+src/services/pretrained_features/glove-lemmatized.6B.300d.magnitude
+src/services/pretrained_features/glove.6B.50d.magnitude
+src/services/pretrained_features/GoogleNews-vectors-negative300.magnitude
+src/services/pretrained_features/glove.6B.300d.magnitude
+src/services/pretrained_features/crawl-300d-2M.magnitude
+src/services/pretrained_features/wiki-news-300d-1M-subword.magnitude
+*.magnitude

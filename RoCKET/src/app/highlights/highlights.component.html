@@ -1,0 +1,30 @@
+
+<div class="page-container" >     
+    <div class="card main-card">
+        <a routerLink="/concepts" class="back-arrow"><i class="fa fa-arrow-left"></i></a>
+        <p>Click the green check if the review is positive or the red x if the sentiment is negative after highlighting Highlight the words or phrases that express sentiment rationale.</p>
+        <div class="highlights-container" >
+            <div class="container" >
+                <div class="col-xs-12 col-md-10 col-lg-8 offset-md-1 offset-md-2 text-block">
+                    <div class="text-block-wraper" id="highcontainer">
+                        <div class="text_wrap">{{labeltask.text}}</div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="footer-block" >
+                <button class="ok-btn" (click)="submitTask(1)">
+                    <img src="assets/img/tick.png">
+                    
+                </button>
+                <button class="cross-btn" (click)="submitTask(0)">
+                    <img src="assets/img/cross.png">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="card main-card results-card">
+        <p>Please highlight all of the words or phrases that represent the rationale for your decision.</p>
+    </div>
+    
+</div>

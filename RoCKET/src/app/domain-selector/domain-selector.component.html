@@ -1,0 +1,15 @@
+<div class="page-container">
+        <div class="card main-card" style="display: block;">
+            <a routerLink="/" class="back-arrow"><i class="fa fa-arrow-left"></i></a>
+            <p class="dark-col">Data Domain Selector</p>
+            
+        
+  <a *ngFor="let domain of domains" routerLink="/concepts" [queryParams]="{ domain: domain.name }" href="" class="btn btn-primary" >
+       {{domain.name}}</a>
+    <!--a routerLink="/concepts" href="" class="btn btn-primary">Movies</a-->
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</div>

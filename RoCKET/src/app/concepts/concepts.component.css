@@ -1,0 +1,139 @@
+.highlights-btn{
+    margin: 5px 10px 10px 10px;    
+    padding: 6px 80px;
+}
+
+.concept-section {
+	padding: 50px 0px;
+}
+
+.concept-section .panel-outer {
+	border:1px solid #bce0fd;
+	padding:5px;
+}
+
+.concept-section .panel-body {
+	background: #bce0fd;
+}
+.consept-left{
+    padding: 7px 5px;
+    border: 1px solid #b7d9f1;
+    overflow-y: scroll;
+    height: 800px;
+}
+.dark-col
+{
+	color:rgba(0, 0, 0, 0.52);
+}
+.consept-left h3{
+	color: #6b6a6ad1;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.consept-left p {
+	font-size: 12px;
+	color: #535252
+}
+.consept-left .panel-default {
+	padding: 5px 6px;
+    background: #b7d9f1;
+    margin-bottom: 12px;
+    min-height: 115px;
+}
+.row.consepts-page {
+    margin: 0px;
+}
+.consept-left .panel-default:last-child {
+    margin-bottom: 0px;
+}
+.row.consepts-page > div{
+    padding: 5px;
+}
+form.consept-form .form-control {
+    border: 1px solid #b7d9f1;
+    border-radius: 0px;
+    padding: 21px 15px;
+    resize: none;
+    margin-bottom: 0px;
+}
+.consept-form .form-group {
+    margin-bottom: 7px;
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; 
+  padding: 0;
+}
+
+.tags li {
+  float: left; 
+}
+.search{
+    display: inline-block;
+    width: 80%;
+    margin-right: 10px;
+}
+.tag {
+    background: #c2e6fd6b;
+    border-radius: 3px;
+    color: #8ccefd;
+    display: inline-block;
+    height: 23px;
+    line-height: 20px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    margin: 0 6px 5px 0;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+    border: 1px solid #93cef7;
+    font-size: 12px;
+}
+
+
+.tags-block {
+	border: 1px solid #b7d9f1;
+    padding: 11px;
+    min-height: 211px;
+    float: left;
+    width: 100%;
+}
+.second-blocks .tags li {
+	float: right;
+}
+.second-tag{
+	float: left;width: 100%;
+	    margin-bottom: 9px;
+}
+.second-tag a.plus-icon {
+    background: #074c97;
+    height: 43px;
+    float: left;
+    width: 44px;
+    text-align: center;
+    line-height: 2.9;
+    color: #fff;
+    border-radius: 30px;
+}
+.tags-block.second-blocks {
+    min-height: 331px;
+}
+.error{
+    border-color: #f00 !important;
+}
+.list {
+    display: inline-block;
+    position: relative;
+    height: 100px;
+    width:100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border: 1px solid #e8f8ff;
+}
+.list-item {
+    border-bottom: 1px solid #e8f8ff;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
